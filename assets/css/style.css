@@ -25,6 +25,8 @@ header .nav-link{
     font-size: 18px;
     font-weight: 500;
     font-family: poppins, sans-serif;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 header .nav-link:hover{
@@ -35,6 +37,8 @@ header .btn{
     width: 170px;
     background-color: white;
     border-radius: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     font-family: poppins, sans-serif;
     font-weight: 500;
@@ -48,7 +52,8 @@ header .btn:hover{
     color: white;
 }
 header .btn:visited, header .btn:active, header .btn:focus{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /* Stickbar Ayarlanması*/
@@ -86,9 +91,16 @@ html{
 .ortala{
     min-height: 100vh;
     width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
     color: white;
     line-height: 25px;
     font-style: normal;
@@ -99,10 +111,19 @@ html{
 .hero img{
     min-height: 100vh;
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;  
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;  
 }
 .ortala>h1{
     color: white;
@@ -131,6 +152,8 @@ html{
     font-family: roboto, sans-serif;
     font-size: 18px;
     font-weight: 500;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .ortala .btn:hover{   
@@ -138,7 +161,8 @@ html{
     color: white;    
 }
 .ortala>.btn:focus{   
-    box-shadow: none!important; 
+    -webkit-box-shadow: none!important;   
+            box-shadow: none!important; 
 }
 .ortala a{
     color: white;
@@ -148,6 +172,8 @@ html{
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .ortala a:hover{
@@ -186,21 +212,23 @@ html{
     background-color: #F9F9FF;
     height: 450px;
     border-radius: 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     -webkit-box-shadow: 50px 0px 30px 0px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow:    50px 0px 30px 0px rgba(0, 0, 0, 0.05);
     box-shadow:         50px 0px 30px 0px rgba(0, 0, 0, 0.05);
     border: 1px solid #707070;  
     cursor: pointer;  
 }
 .serv-box:hover{    
     -webkit-box-shadow: none;
-    -moz-box-shadow:    none;
     box-shadow:         none;
-    transform: scale(1.2);    
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);    
 }
 .serv-box >h3{
     font-family: roboto, sans-serif;
@@ -228,9 +256,16 @@ html{
 #why .col-md-6{
     min-height: 100vh;
     width: 50%;    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #why h3{
     max-width: 400px;
@@ -255,6 +290,8 @@ html{
     margin-top: 10px;
 }
 #why .btn{
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     width: 250px;
     height: 70px;
@@ -273,13 +310,16 @@ html{
     background-color: black;   
 }
 #why .btn:focus{    
-    box-shadow: none;
+    -webkit-box-shadow: none;    
+            box-shadow: none;
 }
 /* Goals Section Ayarlanması */
 .goals .row{
     margin-top: 50px;
 }
 .g-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 20px;
 }
@@ -323,6 +363,8 @@ html{
     height: 70px;
     border-radius: 16px;
     background: #F3F3F3;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     float: right;    
 }
@@ -331,14 +373,19 @@ html{
     color: #fff;
 }
 #client .btn:focus{   
-   box-shadow: none;
+   -webkit-box-shadow: none;   
+           box-shadow: none;
 }
 .client-box{
     width: 100%;
     height: 550px;
     background-color: #EFEFFE;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .content{
     padding: 50px;
@@ -387,12 +434,16 @@ html{
 }
 /* Contact Section Ayarlanması */
 .contact-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100vw;
     height: auto;
     background-color: #333697;
     border-radius: 16px;
-    align-items: cener;
+    -webkit-box-align: cener;
+        -ms-flex-align: cener;
+            align-items: cener;
 }
 .form{
     margin-top: 7.5%;
