@@ -1,0 +1,536 @@
+/*
+ Bu site Enes Kangal tarafından yapılmıştır.
+ Kopyalanması yasaktır.
+ animate uygulanmamıştır.
+ 08.02.2021
+ İletişim için: eneskangal@gmail.com.
+*/
+
+/* Font Yüklemesi */
+@import url("https://use.typekit.net/lmj1bob.css");
+
+/* Header Ayarlanması*/
+header .navbar-brand{
+    line-height: 50px;
+    font-style: normal;
+    color: #0D13D7!important;
+    font-size: 30px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+}
+header .nav-link{
+    line-height: 30px;
+    font-style: normal;
+    color: white!important;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    transition: 0.5s;
+}
+header .nav-link:hover{
+    color: black!important;
+}
+header .btn{
+    height: 50px;
+    width: 170px;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    font-style: normal;
+}
+header .btn:hover{
+    background-color: black;
+    color: white;
+}
+header .btn:visited, header .btn:active, header .btn:focus{
+    box-shadow: none;
+}
+
+/* Stickbar Ayarlanması*/
+html{
+    scroll-behavior: smooth;
+}
+.fixed-top{
+    max-width: 1140px;
+    margin: auto;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.fixed-top.change-color{
+    max-width: 2000px;
+    margin-top: 0;
+    background-color: rgba(38, 0, 0, 0.2);
+    color: white;
+}
+.fixed-top.change-fix-top{
+    max-width: 2000px;
+    margin-top: 0;
+    background-color: rgba(38, 43, 219, 1);;
+    color: white;
+}
+
+/* Hero Section Ayarlanması*/
+.hero{
+    min-height: 110vh;
+    background-image: url("../img/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.ortala{
+    min-height: 100vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    color: white;
+    line-height: 25px;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+}
+.hero img{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+}
+.ortala>h1{
+    color: white;
+    line-height: 50px;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 50px;
+    font-weight: medium;
+}
+.ortala>p{
+    color: white;
+    line-height: 25px;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ortala .btn{
+    width: 250px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    line-height: 25px;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.ortala .btn:hover{   
+    background-color: black;
+    color: white;    
+}
+.ortala>.btn:focus{   
+    box-shadow: none!important; 
+}
+.ortala a{
+    color: white;
+    line-height: 25px;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.ortala a:hover{
+    color: black;    
+}
+
+/* Services Section Ayarlanması*/
+#services, #why, #goal, #client{
+    padding: 100px 0;
+}
+.head{
+    color: #000000;
+    font-style: normal;
+    line-height: 110%;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.para{
+    line-height: 130%;
+    color: #707070;
+    font-style: normal;
+    font-size: 18px;
+    font-family: roboto, sans-serif;
+    font-weight: 400px;
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: center;    
+}
+.serv-box{
+    max-width: 100%;    
+    background-color: #F9F9FF;
+    height: 450px;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 50px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:    50px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow:         50px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #707070;  
+    cursor: pointer;  
+}
+.serv-box:hover{    
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    transform: scale(1.2);    
+}
+.serv-box >h3{
+    font-family: roboto, sans-serif;
+    font-size: 40px;
+    font-weight: medium;
+    line-height: 130%;
+    color: #000000;
+    font-style: normal;
+}
+.serv-box > p{
+    line-height: 130%;
+    color: #707070;
+    font-style: normal;
+    font-size: 18px;
+    font-family: roboto, sans-serif;
+    font-weight: 400px;   
+}
+/* why Section Ayarlanması */
+#why{
+    background-image: url("../img/why-bg.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 30%;    
+}
+#why .col-md-6{
+    min-height: 100vh;
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#why h3{
+    max-width: 400px;
+    min-width: 200px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
+    line-height: 140%;
+    color: #000000;
+    font-style: normal;
+}
+.why-para{
+    max-width: 500px;
+    min-width: 350px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: roboto, sans-serif;
+    line-height: 130%;
+    color: #707070;
+    font-style: normal;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+#why .btn{
+    transition: 0.5s;
+    width: 250px;
+    height: 70px;
+    border-radius: 16px;
+    border: 1px solid #0D13D7;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #707070;
+    font-style: normal;
+}
+#why .btn:hover{    
+    border: none;    
+    color: white; 
+    background-color: black;   
+}
+#why .btn:focus{    
+    box-shadow: none;
+}
+/* Goals Section Ayarlanması */
+.goals .row{
+    margin-top: 50px;
+}
+.g-box{
+    display: flex;
+    padding: 20px;
+}
+#g-box{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 8px 101px 8px;
+    background-color: white;
+    border: 1px solid #707070;
+}
+.g-content >h5{
+    color: #1453FF;
+    line-height: 150%;
+    font-style: normal;
+    margin-left: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.g-content >h6{
+    color: #242424;
+    line-height: 150%;
+    font-style: normal;
+    margin-left: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+/* Port Section Ayarlanması */
+#port{
+    padding: 100px 0;
+    background-image: url("../img/port-bg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+/* client Section Ayarlanması */
+#client .btn{
+    display: block;    
+    max-width: 30%;
+    height: 70px;
+    border-radius: 16px;
+    background: #F3F3F3;
+    transition: 0.5s;
+    float: right;    
+}
+#client .btn:hover{    
+    background: black;
+    color: #fff;
+}
+#client .btn:focus{   
+   box-shadow: none;
+}
+.client-box{
+    width: 100%;
+    height: 550px;
+    background-color: #EFEFFE;
+    display: flex;
+    align-items: center;
+}
+.content{
+    padding: 50px;
+    width: 50%;
+}
+.content > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.content li{
+    float: left;
+}
+.content i{
+    display: block;
+    color: #fed132;
+    padding: 10px;
+}
+.content p{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #222D39;
+    font-style: normal;
+    margin-top: 20px;
+}
+.content h6{
+    color: #000000;
+    line-height: 130%;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.content small{
+    line-height: 250%;
+    color: black;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.content small>span{
+    color: #333697;
+}
+/* Contact Section Ayarlanması */
+.contact-box{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #333697;
+    border-radius: 16px;
+    align-items: cener;
+}
+.form{
+    margin-top: 7.5%;
+}
+.contact-head{
+    color: #FFFFFF;
+    line-height: 130%;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 5000;
+}
+.contact-para{
+    color: #FFFFFF!important;
+    line-height: 150%;
+    font-style: normal;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 4000;
+}
+#exampleInputEmail1{
+    max-width: 50vh;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    padding-left: 30px;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #7C7C7C;
+    font-style: normal;
+    cursor: pointer;
+}
+/* Footer Ayarlanması */
+footer{
+    background-color: #EBEBF8;
+    padding: 50px 0;
+}
+.social-icons, footer ul, .son{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-icon-item, .son-item{
+    float: left;
+}
+.social-icon{
+    display: block;
+    margin: 10px; 
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #9C9CA8;
+    border: 1px solid #9C9CA8;  
+    border-radius: 38px;
+}
+.social-icon >i{
+    color: #9C9CA8;
+}
+footer h6{
+    line-height: 150%;
+    color: black;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
+}
+footer a, footer p{
+    line-height: 80%;
+    color: #8A8A8A;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+#copy{
+    line-height: 1.5;
+    color: #677294;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: poppins, sans-serif;
+    margin: 40px 0 0 0;
+}
+.son-item>a{
+    display: block;
+    padding: 0 50px;
+    margin: 40px 0 0 0;
+    line-height: 1.5;
+    color: #677294;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: poppins, sans-serif;
+}
+/* Responsive Ayarları */
+@media (max-width: 991px) {
+    .ortala>h1{
+        font-size: 40px;
+    }
+    .ortala>p{       
+        width: 500px;
+    }
+    .son-item>a{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-box{
+        height: auto;
+    }
+    .son-item>a{
+        padding: 0 10px;
+    }
+    .ortala>h1{
+        font-size: 20px;
+    } 
+    .hero
+    {
+        display: none;
+    }   
+}
+@media (max-width: 575px) {   
+    .ortala>h1{
+        font-size: 20px;
+    }
+    .ortala>p{
+        font-size: 14px;
+        width: 400px;
+    } 
+    .hero
+    {
+        display: none;
+    }
+    #client i{
+        display: none;
+    }     
+        
+}
