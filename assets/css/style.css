@@ -278,8 +278,7 @@ html{
     font-style: normal;
 }
 .why-para{
-    max-width: 500px;
-    min-width: 350px;
+    max-width: 500px;    
     font-size: 18px;
     font-weight: 400;
     font-family: roboto, sans-serif;
@@ -566,6 +565,17 @@ footer a, footer p{
     .hero
     {
         display: none;
+    }
+    .client-box{
+        height: auto;
+        display: block;
+    }
+    .content{
+        width: 100%;
+    }
+    .contact-box{
+        display: block!important;        
+        padding-bottom: 20px;
     }   
 }
 @media (max-width: 575px) {   
