@@ -574,6 +574,9 @@ footer a, footer p{
     .contact-box{
         display: block!important;        
         padding-bottom: 20px;
+    }
+    .head{
+        font-size: 40px;
     }   
 }
 @media (max-width: 575px) {   
@@ -590,6 +593,6 @@ footer a, footer p{
     }
     #client i{
         display: none;
-    }     
+    }        
         
 }
